@@ -19,9 +19,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*", "../*", "../../*", "./../*"]
     }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  }, 
+  "include": ["next-env.d.ts", "../*.ts", "../*.tsx",
+    "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", 
+    "./app/**/*.{js,ts,jsx,tsx}", 
+    "./components/**/*.{js,ts,jsx,tsx}", 
+    "./pages/**/*.{js,ts,jsx,tsx}"
+, "app/components/projectCard.js"  ],
   "exclude": ["node_modules"]
 }
