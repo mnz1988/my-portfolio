@@ -1,26 +1,4 @@
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectTitle, projectCountry, projectDescription, projectTags, images }) => (
-  <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300">
-    <div className="flex items-center justify-between">
-      <div>
-        <h2 className="font-semibold text-lg">{projectTitle}</h2>
-        <p className="mt-2">
-          {projectTags.map((tag, index) => (
-            <span key={index} className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">
-              {tag}
-            </span>
-          ))}
-        </p>
-      </div>
-      <span className="italic font-normal">{projectCountry}</span>
-    </div>
-    <p>{projectDescription}</p>
-    <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600">
-      {images.map((imgSrc, index) => (
-        <img key={index} className="rounded-xl mx-auto" loading="lazy" src={imgSrc} alt={`${projectTitle} ${index + 1}`} />
-      ))}
-    </div>
-  </div>
-)
+import ProjectCard from "@/app/components/projectCard";
 
 const projects = [
   {
@@ -53,11 +31,60 @@ const projects = [
       '/portfoimages/freelance/KidsRoom3.jpg',
     ],
   },
+  {
+    projectTitle: 'We Remove Doubts',
+    projectCountry: 'USA',
+    projectDescription: 'Robbie&apos;s Automotive and Collision Specialists',
+    projectTags: ['Car Wrap Design', ],
+    images: [
+      '/portfoimages/freelance/Robbies-Automotive-base-Copy-2.jpg',
+      '/portfoimages/freelance/Robbies-Automotive-bus-4-Copy.jpg',
+      '/portfoimages/freelance/Robbies-Automotive-base-Copy.jpg',
+    ],
+  },
+  {
+    projectTitle: 'Convey Brewing On-The-Go',
+    projectCountry: 'USA',
+    projectDescription: 'MoJoe Brewing',
+    projectTags: ['Packaging Design', ],
+    images: [
+      '/portfoimages/freelance/MoJoe Brewing.jpg',
+      '/portfoimages/freelance/MoJoe Brewing.png',
+    ],
+  },
+  {
+    projectTitle: 'Automatic Seller',
+    projectCountry: 'USA',
+    projectDescription: 'Sock Fancy Company',
+    projectTags: ['Wrap Design', ],
+    images: [
+      '/portfoimages/freelance/Sock-Fancy-1.jpg',
+      '/portfoimages/freelance/Sock-Fancy.jpg',
+    ],
+  },
+  {
+    projectTitle: 'Kids Ears band',
+    projectCountry: 'USA',
+    projectDescription: 'Children&apos;s Ears Band',
+    projectTags: ['3D Modeling', 'Label Design'],
+    images: [
+      '/portfoimages/freelance/EarsBand-present2.jpg',
+      '/portfoimages/freelance/EarsBand-present.jpg',
+    ],
+  },
+  // {
+  //   projectTitle: '',
+  //   projectCountry: 'USA',
+  //   projectDescription: '',
+  //   projectTags: ['', '',],
+  //   images: [
+  //     '',
+  //     '',
+  //   ],
+  // },
 ];
 
 export default function FreelancePage() {
-  
-
   return (
     <main className="px-4 py-6 max-w-7xl mx-auto">
       {/* Header */}
@@ -73,78 +100,10 @@ export default function FreelancePage() {
       </div>
       {/* Content Grid */}
       <div className="grid gap-6 text-gray-800 md:grid-cols-2">
+        {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
 
-      {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-
-  
-        {/* Robbies Automotive */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="font-semibold text-lg">We Remove Doubts</h2>
-                  <p className="mt-2">
-                    <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Car Wrap Design</span>
-                  </p>
-                </div>
-                <span className="italic font-normal">USA</span>
-              </div>
-              <p>Robbie's Automotive and Collision Specialists</p>
-              <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Robbies-Automotive-base-Copy-2.jpg" alt="Robbies Automotive" />
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Robbies-Automotive-bus-4-Copy.jpg" alt="Robbies Automotive" />
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Robbies-Automotive-base-Copy.jpg" alt="Robbies Automotive" />
-            </div>
-        </div>
-        {/* Convey Brewing On-The-Go */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Convey Brewing On-The-Go</h2>
-                <p className="mt-2"><span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Packaging Design</span></p>
-              </div><span className="italic font-normal">USA</span></div>
-            <p>MoJoe Brewing</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/MoJoe Brewing.jpg" alt="Convey Brewing On-The-Go" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/MoJoe Brewing.png" alt="Convey Brewing On-The-Go" />
-          </div>
-        </div>
-        {/* Automatic Seller */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Automatic Seller</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Wrap Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Sock Fancy Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Sock-Fancy-1.jpg" alt="Automatic Seller" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Sock-Fancy.jpg" alt="Automatic Seller" />
-          </div>
-        </div>
-        {/* Kids Ears band */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Kids Ears band</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Modeling</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm">Label Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Children's Ears Band</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/EarsBand-present2.jpg" alt="Kids Ears band" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/EarsBand-present.jpg" alt="Kids Ears band" />
-          </div>
-        </div>
         {/* Hair & Body & Me */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">

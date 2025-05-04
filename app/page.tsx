@@ -28,7 +28,7 @@ export default function Home() {
             <p className="text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600 dark:from-blue-400 dark:to-pink-400">
               know me better 
             </p>
-            <span className="text-lg font-semibold">& I'll Help you with your </span>
+            <span className="text-lg font-semibold">& I&apos;ll Help you with your </span>
             <p className="mb-2 text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600 dark:from-blue-400 dark:to-pink-400">
               prototypes / products 
             </p>

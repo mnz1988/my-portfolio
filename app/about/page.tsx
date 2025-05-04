@@ -61,7 +61,7 @@ export default function AboutPage() {
           <p className="mb-4">
             Most people know me as the go-to person when they need ideas or are stuck.
             I value <b>team collaboration</b>, high performance design, and <b>business growth</b> — I believe in
-            <em> "share to get."</em>
+            <em> &quot;share to get.&quot;</em>
           </p>
 
           <Image

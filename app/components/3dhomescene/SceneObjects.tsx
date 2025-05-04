@@ -1,9 +1,26 @@
 "use client";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { useRef, useEffect, useMemo } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import { Group, AnimationMixer, Mesh, BoxGeometry, MeshBasicMaterial } from "three";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+
+// preload models
+const MODELS = [
+  "/models/base-static.gltf",
+  "/models/door.gltf",
+  "/models/ac.gltf",
+  "/models/shelves.gltf",
+  "/models/workstation.gltf",
+  "/models/window.gltf",
+  "/models/projector.gltf",
+  "/models/bigRobot.gltf",
+  "/models/miniRobot.gltf",
+  "/models/miniRobotFly.gltf",
+  "/models/fan.gltf",
+  "/models/particle.gltf",
+];
+MODELS.forEach((model) => useGLTF.preload(model));
 
 export default function SceneObjects() {
   const texture = useTexture("/models/backed_texture.webp");
@@ -13,6 +30,7 @@ export default function SceneObjects() {
   texture.flipY = false;
   texture.colorSpace = THREE.SRGBColorSpace;
 
+  // load models
   const baseModels = useGLTF("/models/base-static.gltf");
   const door = useGLTF("/models/door.gltf");
   const ac = useGLTF("/models/ac.gltf");
@@ -27,7 +45,7 @@ export default function SceneObjects() {
   const particle = useGLTF("/models/particle.gltf");
 
   // Reuse logic to clone and setup models
-  const createModelInstance = (
+  const createModelInstance = useCallback((
     model: THREE.Group,
     position: [number, number, number],
     rotation: [number, number, number],
@@ -40,8 +58,8 @@ export default function SceneObjects() {
     clone.rotation.set(...rotation);
     clone.scale.set(scale, scale, scale);
 
-    clone.traverse((child: any) => {
-      if (child.isMesh) {
+    clone.traverse((child: THREE.Object3D) => {
+      if (child instanceof THREE.Mesh) {
         child.material.map = texture;
         child.frustumCulled = true;
       }
@@ -56,7 +74,7 @@ export default function SceneObjects() {
     }
 
     rootGroup.current.add(clone);
-  };
+  }, [texture]);
 
   // Initial scene build
   useEffect(() => {
@@ -74,10 +92,10 @@ export default function SceneObjects() {
     // workstations
     ([[0, 0, 0], [0, 0, -1.7], [0, 0, -3.475], [0, 0, -5.42]] as [number, number, number][]).forEach(pos => createModelInstance(workstation.scene, pos, [0, R, 0]) );
     // Windows
-    const windows1 = [[0, 0, 0], [0, -0.335, 0], [0, -0.796, 0], [0, -1.148, 0], [-0.54, -0.174, 0], [-0.54, -0.528, 0], [-0.54, -0.99, 0], [-0.54, -1.326, 0],];
-    windows1.forEach(pos => createModelInstance(window.scene, pos as any, [0, R, 0]));
-    const windows2 = [ [0.88, 0, -1.161], [0.88, -0.33, -1.161], [0.88, -0.136, -1.695], [0.88, -0.478, -1.695], [0.88, 0.029, -2.81], [0.88, -0.303, -2.81], [0.88, -0.14, -3.363], [0.88, -0.475, -3.363], [0.88, 0.05, -4.465], [0.88, -0.303, -4.465], [0.88, -0.135, -5.005], [0.88, -0.48, -5.005], ];
-    windows2.forEach(pos => createModelInstance(window.scene, pos as any, [0, 0, 0]));
+    const windows1: [number, number, number][] = [[0, 0, 0], [0, -0.335, 0], [0, -0.796, 0], [0, -1.148, 0], [-0.54, -0.174, 0], [-0.54, -0.528, 0], [-0.54, -0.99, 0], [-0.54, -1.326, 0],];
+    windows1.forEach(pos => createModelInstance(window.scene, pos, [0, R, 0]));
+    const windows2: [number, number, number][] = [ [0.88, 0, -1.161], [0.88, -0.33, -1.161], [0.88, -0.136, -1.695], [0.88, -0.478, -1.695], [0.88, 0.029, -2.81], [0.88, -0.303, -2.81], [0.88, -0.14, -3.363], [0.88, -0.475, -3.363], [0.88, 0.05, -4.465], [0.88, -0.303, -4.465], [0.88, -0.135, -5.005], [0.88, -0.48, -5.005], ];
+    windows2.forEach(pos => createModelInstance(window.scene, pos, [0, 0, 0]));
     // Projectors
     const nRow = 8, nCol = 3, xSpace = 2, zSpace = 0.9;
     for (let row = 0; row < nRow; row++) {

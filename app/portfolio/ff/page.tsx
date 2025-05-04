@@ -38,7 +38,7 @@ export default function FFPage() {
         <div className="rounded-xl p-4 bg-white text-center">
           <h2 className="text-2xl font-bold mb-4">GEAR SHOP</h2>
           <p className="text-sm mb-4">
-            Men's and Women's Accessories, Mouse Pads, Drinkware, Sportswear, PPE Hoodies, Jerseys, Pants, Collared, Pullovers, Leggings...
+            Men&apos;s and Women&apos;s Accessories, Mouse Pads, Drinkware, Sportswear, PPE Hoodies, Jerseys, Pants, Collared, Pullovers, Leggings...
           </p>
           <video src="/portfoimages/ff/merchand.mp4" controls className="rounded-lg mb-4 w-full"  />
           <a href="https://gamer.playmakerswanted.com/store/finalfrontier" target="_blank" className="block ring-1 rounded py-2 px-3 text-sm font-semibold mb-4">
@@ -68,7 +68,7 @@ export default function FFPage() {
         <div className="rounded-xl p-4 bg-white text-center">
           <h2 className="text-2xl font-bold mb-4">Magazines</h2>
           <p className="text-sm mb-4">
-            FRONT (Main Magazine) & METAPOWER (Official Women"s Empowerment Magazine of the Metaverse)
+            FRONT (Main Magazine) & METAPOWER (Official Women&apos;s Empowerment Magazine of the Metaverse)
           </p>
           <video src="/portfoimages/ff/mag.mp4" controls className="rounded-lg mb-4 w-full"  />
           <div className="flex justify-center gap-2">

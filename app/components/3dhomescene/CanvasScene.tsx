@@ -3,6 +3,7 @@ import * as THREE from "three";
 import { Canvas, useFrame} from "@react-three/fiber";
 import { Suspense, useRef, useMemo } from "react";
 import { OrbitControls, Text, } from "@react-three/drei";
+import type { OrbitControls as OrbitControlsType } from "three-stdlib";
 import SceneObjects from "./SceneObjects";
 
 function LoadingMesh() {
@@ -20,7 +21,7 @@ function LoadingMesh() {
 }
 
 function CameraController() {
-  const controlsRef = useRef<any>(null);
+  const controlsRef = useRef<OrbitControlsType>(null);
   const directionRef = useRef(1);
 
   useFrame(() => {
