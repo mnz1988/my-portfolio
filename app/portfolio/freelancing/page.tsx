@@ -42,6 +42,17 @@ const projects = [
       '/portfoimages/freelance/NonStop.jpg',
     ],
   },
+  {
+    projectTitle: 'Kids Room Design',
+    projectCountry: 'USA',
+    projectDescription: 'Kids Room Design in a Box for Two / Play, Study, Sleep',
+    projectTags: ['3D design', ],
+    images: [
+      '/portfoimages/freelance/KidsRoom1.jpg',
+      '/portfoimages/freelance/KidsRoom2.jpg',
+      '/portfoimages/freelance/KidsRoom3.jpg',
+    ],
+  },
 ];
 
 export default function FreelancePage() {
@@ -67,24 +78,7 @@ export default function FreelancePage() {
           <ProjectCard key={index} {...project} />
         ))}
 
-        {/* Kids Room Design */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h2 className="font-semibold text-lg">Kids Room Design</h2>
-                  <p className="mt-2">
-                    <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D design</span>
-                  </p>
-                </div>
-                <span className="italic font-normal">USA</span>
-              </div>
-              <p>Kids Room Design in a Box for Two / Play, Study, Sleep</p>
-              <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/KidsRoom1.jpg" alt="" />
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/KidsRoom2.jpg" alt="" />
-                <img className="rounded-xl mx-auto" src="/portfoimages/freelance/KidsRoom3.jpg" alt="" />
-            </div>
-        </div>
+  
         {/* Robbies Automotive */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
               <div className="flex items-center justify-between">
