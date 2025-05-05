@@ -1,6 +1,9 @@
+import LoadingOverlay from "@/app/components/LoadingOverlay";
+
 export default function AropixPage() {
   return (
-    <>
+    <main>
+      <LoadingOverlay />
       <div className="mx-auto flex w-full flex-col flex-wrap items-center md:flex-row lg:w-4/5">
         <div className="flex w-full flex-col items-start justify-center p-8 text-center md:w-2/5 md:text-left">
           <h1 className="my-1 text-5xl font-bold leading-tight">Aropix Studio</h1>
@@ -18,7 +21,7 @@ export default function AropixPage() {
                 <video
                   src="/portfoimages/aropix/Wooden Soul by Aropix Studio.mp4"
                   className="rounded-lg w-full max-w-5xl mx-auto"
-                  controls preload="none" poster="/portfoimages/aropix-cover.webp"
+                  controls poster="/portfoimages/aropix-cover.webp"
                 ></video>
 
                 <figure className="mt-10">
@@ -65,6 +68,6 @@ export default function AropixPage() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 }

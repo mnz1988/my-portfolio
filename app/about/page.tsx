@@ -1,5 +1,5 @@
 "use client";
-
+import LoadingOverlayLight from "../components/LoadingOverlayLight";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLinkIcon } from "lucide-react";
@@ -29,6 +29,8 @@ export default function AboutPage() {
 
   return (
     <div className="px-4 max-w-screen-xl mx-auto">
+      <LoadingOverlayLight/>
+      
       <div className="py-5">
         <p className="uppercase text-sm text-gray-500">i wear multiple caps</p>
         <h1 className="my-1 text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">About Me</h1>

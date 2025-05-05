@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function LoadingOverlay() {
+export default function LoadingOverlayLight() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setVisible(false);
-    }, 5000); // 5 seconds
+    }, 3000); // 3 seconds
 
     return () => clearTimeout(timeout);
   }, []);

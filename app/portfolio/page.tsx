@@ -1,5 +1,5 @@
 "use client";
-
+import LoadingOverlayLight from "../components/LoadingOverlayLight";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,15 +14,11 @@ export default function PortfolioPage() {
 
   return (
     <main>
+      <LoadingOverlayLight />
+      
       {/* Video Hero */}
       <div className="relative w-screen h-[28vh] sm:h-[29vh] md:h-[40vh] lg:h-[48vh]">
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
+        <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted controls={false} playsInline>
           <source src="/portfoimages/idea-developer.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -33,7 +29,7 @@ export default function PortfolioPage() {
         <h1 className="my-1 text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
           Portfolio
         </h1>
-        <p className="text-2xl font-light">a summary of my activities</p>
+        <p className="text-2xl font-light">A collection of my work across design, development, and product experiences.</p>
       </div>
 
       {/* Portfolio Grid */}
@@ -58,11 +54,37 @@ export default function PortfolioPage() {
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
             Final Frontier 🔗
           </h2>
-          <p className="text-center font-semibold text-gray-900">Web3 Core Team / Designer</p>
+          <p className="text-center font-semibold text-gray-900">Web3 Core Team + Designer</p>
           <p className="text-center text-gray-700">2021~today / USA</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/ff-cover.webp">
             <source src="/portfoimages/ff/FinalFrontier.webm" type="video/webm" />
+          </video>
+        </div>
+
+        {/* ardourWolf */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/ardourWolf">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Ardour Wolf 🔗
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Product Designer</p>
+          <p className="text-center text-gray-700">2009 / Australia</p>
+          <img src="/portfoimages/avesCover.webp" className="w-full" />
+          </Link>
+        </div>
+
+        {/* Lotty Dotty */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/lottyDotty">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Lotty Dotty 🔗
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Product Designer</p>
+          <p className="text-center text-gray-700">2008 / FRANCE, USA</p>
+          </Link>
+          <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/LottyDottycover.webp" loop>
+            <source src="/portfoimages/LottyDotty/LDTShirts.mp4" type="video/webm" />
           </video>
         </div>
 
@@ -72,7 +94,7 @@ export default function PortfolioPage() {
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
             Freelancing 🔗
           </h2>
-          <p className="text-center font-semibold text-gray-900">Product Designer / Graphics Designer</p>
+          <p className="text-center font-semibold text-gray-900">Creative Designer</p>
           <p className="text-center text-gray-700">2006~today / International</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/freelance-cover.webp" loop>
@@ -81,24 +103,24 @@ export default function PortfolioPage() {
         </div>
 
         {/* I.D. Accelerator */}
-        <div className=" p-4 rounded-xl bg-white border border-gray-200">
+        {/* <div className=" p-4 rounded-xl bg-white border border-gray-200">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            I.D. Accelerator ⟁
+            I.D. Accelerator 
           </h2>
-          <p className="text-center font-semibold text-gray-900">Product Manager / Business Consultant</p>
+          <p className="text-center font-semibold text-gray-900">Product Designer / Business Consultant</p>
           <p className="text-center text-gray-700">2018~2020 / IRI</p>
           <video className="rounded-lg w-full mt-2" controls autoPlay loop poster="/portfoimages/phnx-cover.webp">
             <source src="/portfoimages/ida/IdeaDevelopersAccelerator.mp4" type="video/mp4" />
           </video>
-        </div>
+        </div> */}
 
-        {/* Phoenix Team */}
+        {/* UX/UI */}
         <div className=" p-4 rounded-xl bg-white border border-gray-200">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Phoenix Team ⟁
+            UX/UI - Mobile & Web 
           </h2>
-          <p className="text-center font-semibold text-gray-900">Head of Design / Product Owner</p>
-          <p className="text-center text-gray-700">2016~2018 / IRI</p>
+          <p className="text-center font-semibold text-gray-900">Analyzer and Designer</p>
+          <p className="text-center text-gray-700">2014~today / International</p>
           <video className="rounded-lg w-full mt-2" controls autoPlay loop>
             <source src="/portfoimages/pnx/PNX-Upgrade.mp4" type="video/mp4" />
           </video>
