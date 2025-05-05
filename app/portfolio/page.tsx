@@ -62,6 +62,32 @@ export default function PortfolioPage() {
           </video>
         </div>
 
+        {/* UX/UI */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/uxui">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+          UX/UI - Mobile & Web 🔗
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Analyzer and Designer</p>
+          <p className="text-center text-gray-700">2014~today / International</p>
+          </Link>
+          <video className="rounded-lg w-full mt-2" controls loop poster="/portfoimages/uxui/gramista/Capture.webp">
+            <source src="/portfoimages/pnx/PNX-Upgrade.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        {/* Freelancing */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/freelancing">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Freelancing 🔗
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Creative Designer</p>
+          <p className="text-center text-gray-700">2006~today / International</p>
+          <img src="/portfoimages/freelance-cover.webp" className="rounded-lg w-full mt-2" alt="freelancing design" />
+          </Link>
+        </div>
+
         {/* ardourWolf */}
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/ardourWolf">
@@ -88,19 +114,20 @@ export default function PortfolioPage() {
           </video>
         </div>
 
-        {/* Freelancing */}
+        {/* Logo / branding */}
         <div className="p-4 rounded-xl bg-white border border-gray-200">
-          <Link href="/portfolio/freelancing">
+          <Link href="/portfolio/logo">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Freelancing 🔗
+            Logo & Logo motion
           </h2>
-          <p className="text-center font-semibold text-gray-900">Creative Designer</p>
+          <p className="text-center font-semibold text-gray-900">Graphic Design</p>
           <p className="text-center text-gray-700">2006~today / International</p>
-          </Link>
-          <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/freelance-cover.webp" loop>
-            <source src="/portfoimages/freelance/freelancing.webm" type="video/webm" />
+          <video className="rounded-lg border border-gray-300 w-full mt-2" loop autoPlay={true} preload="true">
+            <source src="/portfoimages/logo/logo-animation-demo.mp4" type="video/mp4" />
           </video>
+          </Link>
         </div>
+
 
         {/* I.D. Accelerator */}
         {/* <div className=" p-4 rounded-xl bg-white border border-gray-200">
@@ -114,17 +141,6 @@ export default function PortfolioPage() {
           </video>
         </div> */}
 
-        {/* UX/UI */}
-        <div className=" p-4 rounded-xl bg-white border border-gray-200">
-          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            UX/UI - Mobile & Web 
-          </h2>
-          <p className="text-center font-semibold text-gray-900">Analyzer and Designer</p>
-          <p className="text-center text-gray-700">2014~today / International</p>
-          <video className="rounded-lg w-full mt-2" controls autoPlay loop>
-            <source src="/portfoimages/pnx/PNX-Upgrade.mp4" type="video/mp4" />
-          </video>
-        </div>
 
         {/* Contact Section */}
         <section className="col-span-full p-6 rounded-xl bg-white border border-gray-200">

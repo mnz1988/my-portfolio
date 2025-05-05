@@ -8,6 +8,7 @@ export interface ProjectCardProps {
   projectDescription: string;
   projectTags: string[];
   images: string[];
+  videos?: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,7 +16,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectCountry,
   projectDescription,
   projectTags,
-  images
+  images,
+  videos = [],
 }) => (
   <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300">
     <div className="flex items-center justify-between">
@@ -36,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     
     {/* <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600"> */}
     <div className="mt-4 text-gray-600">
-      <ImageLightbox images={images} />
+      <ImageLightbox images={images} videos={videos}/>
     </div>
   </div>
 );

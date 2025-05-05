@@ -1,8 +1,7 @@
 import ProjectCard from "@/app/components/projectCard";
 
 const projects = [
-  {
-    projectTitle: 'Rain in All Languages',
+  { projectTitle: 'Rain in All Languages',
     projectCountry: 'JAPAN',
     projectDescription: 'Design On Blunt xs Metro / Weather application',
     projectTags: ['Gift Design', 'Texture Design'],
@@ -10,29 +9,19 @@ const projects = [
       '/portfoimages/freelance/Rain in All Languages 1.jpg',
       '/portfoimages/freelance/Rain in All Languages 2.jpg',
     ],
+    videos: []
   },
-  {
-    projectTitle: 'NonStop Web and Calculator',
+  { projectTitle: 'Convey Brewing On-The-Go',
     projectCountry: 'USA',
-    projectDescription: 'NonStop Signs Graphics Company Website Design',
-    projectTags: ['UI/UX Design', ],
+    projectDescription: 'MoJoe Brewing',
+    projectTags: ['Packaging Design', ],
     images: [
-      '/portfoimages/freelance/NonStop.jpg',
+      '/portfoimages/freelance/MoJoe Brewing.jpg',
+      '/portfoimages/freelance/MoJoe Brewing.png',
     ],
+    videos: []
   },
-  {
-    projectTitle: 'Kids Room Design',
-    projectCountry: 'USA',
-    projectDescription: 'Kids Room Design in a Box for Two / Play, Study, Sleep',
-    projectTags: ['3D design', ],
-    images: [
-      '/portfoimages/freelance/KidsRoom1.jpg',
-      '/portfoimages/freelance/KidsRoom2.jpg',
-      '/portfoimages/freelance/KidsRoom3.jpg',
-    ],
-  },
-  {
-    projectTitle: 'We Remove Doubts',
+  { projectTitle: 'We Remove Doubts',
     projectCountry: 'USA',
     projectDescription: 'Robbie&apos;s Automotive and Collision Specialists',
     projectTags: ['Car Wrap Design', ],
@@ -41,19 +30,20 @@ const projects = [
       '/portfoimages/freelance/Robbies-Automotive-bus-4-Copy.jpg',
       '/portfoimages/freelance/Robbies-Automotive-base-Copy.jpg',
     ],
+    videos: []
   },
-  {
-    projectTitle: 'Convey Brewing On-The-Go',
+  { projectTitle: 'Kids Room Design',
     projectCountry: 'USA',
-    projectDescription: 'MoJoe Brewing',
-    projectTags: ['Packaging Design', ],
+    projectDescription: 'Kids Room Design in a Box for Two / Play, Study, Sleep',
+    projectTags: ['3D design', ],
     images: [
-      '/portfoimages/freelance/MoJoe Brewing.jpg',
-      '/portfoimages/freelance/MoJoe Brewing.png',
+      '/portfoimages/freelance/KidsRoom1.jpg',
+      '/portfoimages/freelance/KidsRoom2.jpg',
+      '/portfoimages/freelance/KidsRoom3.jpg',
     ],
+    videos: []
   },
-  {
-    projectTitle: 'Automatic Seller',
+  { projectTitle: 'Automatic Seller',
     projectCountry: 'USA',
     projectDescription: 'Sock Fancy Company',
     projectTags: ['Wrap Design', ],
@@ -61,9 +51,9 @@ const projects = [
       '/portfoimages/freelance/Sock-Fancy-1.jpg',
       '/portfoimages/freelance/Sock-Fancy.jpg',
     ],
+    videos: []
   },
-  {
-    projectTitle: 'Kids Ears band',
+  { projectTitle: 'Kids Ears band',
     projectCountry: 'USA',
     projectDescription: 'Children&apos;s Ears Band',
     projectTags: ['3D Modeling', 'Label Design'],
@@ -71,16 +61,48 @@ const projects = [
       '/portfoimages/freelance/EarsBand-present2.jpg',
       '/portfoimages/freelance/EarsBand-present.jpg',
     ],
+    videos: []
   },
-  // {
-  //   projectTitle: '',
+  { projectTitle: 'Hair &amp; Body &amp; Me',
+    projectCountry: 'AUSTRALIA',
+    projectDescription: 'Hair&amp;Me | Body&amp;Me',
+    projectTags: ['Packaging Design', ],
+    images: [
+      '/portfoimages/freelance/Hair-Body-Me3.jpg',
+      '/portfoimages/freelance/Hair-Body-Me1.jpg',
+      '/portfoimages/freelance/Hair-Body-Me2.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Dental Clinic',
+    projectCountry: 'NORWAY',
+    projectDescription: 'Mjosa Tannklinikk',
+    projectTags: ['3D Poster Design',],
+    images: [
+      '/portfoimages/freelance/Mjosa Tannklinikk 1.png',
+      '/portfoimages/freelance/Mjosa Tannklinikk 2.jpg',
+      '/portfoimages/freelance/Mjosa Tannklinikk 3.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Atomic Fireballs',
+    projectCountry: 'USA',
+    projectDescription: 'frame design for home decoration',
+    projectTags: ['3D Modeling', 'Frame Design',],
+    images: [
+      '/portfoimages/freelance/ATOMIC-FIRE-BALLS-2.jpg',
+      '/portfoimages/freelance/ATOMIC-FIRE-BALLS-1.jpg',
+    ],
+  videos: []
+  },
+  // { projectTitle: '',
   //   projectCountry: 'USA',
   //   projectDescription: '',
   //   projectTags: ['', '',],
   //   images: [
   //     '',
-  //     '',
   //   ],
+  // videos: ['',]
   // },
 ];
 
@@ -103,61 +125,6 @@ export default function FreelancePage() {
         {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
-
-        {/* Hair & Body & Me */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Hair &amp; Body &amp; Me</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Packaging Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">AUSTRALIA</span>
-            </div>
-            <p>Hair&amp;Me | Body&amp;Me</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Hair-Body-Me3.jpg" alt="Hair &amp; Body &amp; Me" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Hair-Body-Me1.jpg" alt="Hair &amp; Body &amp; Me" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Hair-Body-Me2.jpg" alt="Hair &amp; Body &amp; Me" />
-          </div>
-        </div>
-        {/* Dental Clinic */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Dental Clinic</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Poster Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">NORWAY</span>
-            </div>
-            <p>Mjosa Tannklinikk</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Mjosa Tannklinikk 1.png" alt="Dental Clinic" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Mjosa Tannklinikk 2.jpg" alt="Dental Clinic" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Mjosa Tannklinikk 3.jpg" alt="Dental Clinic" />
-          </div>
-        </div>
-        {/* Atomic Fireballs */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Atomic Fireballs</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Modeling</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Frame Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>not company order</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/ATOMIC-FIRE-BALLS-2.jpg" alt="Atomic Fireballs" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/ATOMIC-FIRE-BALLS-1.jpg" alt="Atomic Fireballs" />
-          </div>
-        </div>
         {/* Fashion Scarfing */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
@@ -178,26 +145,7 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/HijabMe4.gif" alt="Fashion Scarfing" />
           </div>
         </div>
-        {/* Hacking The Curiosity */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Hacking The Curiosity</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Logo Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Blog Redesign</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Curiosity Hack Blogging</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/curiosity-hack-logo-2.png" alt="Hacking The Curiosity" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/curiosity-hack-logo-1.png" alt="Hacking The Curiosity" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/curiosity-hack-logo-3.png" alt="Hacking The Curiosity" />
-          </div>
-        </div>
-        {/* Runners for Mercedes */}
+{/* Runners for Mercedes */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
               <div>
@@ -229,7 +177,7 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Crosslake.jpg" alt="Data Optimization - Crosslake Tech Company" />
           </div>
         </div>
-        {/* Fashion Network */}
+{/* Fashion Network */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
               <div>
@@ -247,7 +195,7 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/FASHION NETWORK 3.jpg" alt="Fashion Network" />
           </div>
         </div>
-        {/* Health Care N.G.O */}
+{/* Health Care N.G.O */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
               <div>
@@ -264,7 +212,7 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/NGO-Mag-2.jpg" alt="Health Care N.G.O - National Hauora Coalition" />
           </div>
         </div>
-        {/* Day and Night Jewel */}
+{/* Day and Night Jewel */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
               <div>
@@ -316,7 +264,7 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Hook-N-Cook-Off.jpg" alt="Hook-N-Cook Off - Vyve Broadband Company" />
           </div>
         </div>
-        {/* Pets Toys */}
+                {/* Pets Toys */}
         <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
             <div className="flex items-center justify-between">
               <div>
@@ -388,23 +336,19 @@ export default function FreelancePage() {
               <img className="rounded-xl mx-auto" src="/portfoimages/freelance/deck-pattern-for-kayak.jpg" alt="Deck Patterns for Kayak" />
           </div>
         </div>
-        {/* Gottes Weg */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Gottes Weg</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Logo Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Business Card Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">GERMANY</span>
-            </div>
-            <p>Gottes Weg Church</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Business-Card-Gottes-Weg.jpg" alt="Gottes Weg - Gottes Weg Church" />
-          </div>
-        </div>
+              {/* Hacking The Curiosity
+                 Blog Redesign
+              USA
+            Curiosity Hack Blogging
+            /portfoimages/freelance/curiosity-hack-logo-2.png
+            curiosity-hack-logo-1.png
+            curiosity-hack-logo-3.png
+
+              Gottes Weg
+              Business Card Design
+              GERMANY
+              Gottes Weg Church
+              Business-Card-Gottes-Weg.jpg */}
       
       
       </div>
