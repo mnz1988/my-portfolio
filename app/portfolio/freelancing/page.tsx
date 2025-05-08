@@ -95,15 +95,128 @@ const projects = [
     ],
   videos: []
   },
-  // { projectTitle: '',
-  //   projectCountry: 'USA',
-  //   projectDescription: '',
-  //   projectTags: ['', '',],
-  //   images: [
-  //     '',
-  //   ],
-  // videos: ['',]
-  // },
+  { projectTitle: 'Fashion Scarfing',
+    projectCountry: 'IRAN, TURKEY',
+    projectDescription: 'HijabMe Company',
+    projectTags: ['Scarf Design', 'Pattern Design',],
+    images: [
+      '/portfoimages/freelance/HijabMe1.gif',
+      '/portfoimages/freelance/HijabMe2.gif',
+      '/portfoimages/freelance/HijabMe3.gif',
+      '/portfoimages/freelance/HijabMe4.gif',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Runners for Mercedes',
+    projectCountry: 'CANADA',
+    projectDescription: 'Mercedes Benz Burlington',
+    projectTags: ['Poster Design',],
+    images: [
+      '/portfoimages/freelance/Mercedes-Benz.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Data Optimization',
+    projectCountry: 'USA',
+    projectDescription: 'Crosslake Tech Company',
+    projectTags: ['3D Design', ],
+    images: [
+      '/portfoimages/freelance/Crosslake.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Fashion Network',
+    projectCountry: 'INTERNATONAL',
+    projectDescription: 'FASHION NETWORK',
+    projectTags: ['Magazine Design',],
+    images: [
+      '/portfoimages/freelance/FASHION NETWORK 1.jpg',
+      '/portfoimages/freelance/FASHION NETWORK 2.jpg',
+      '/portfoimages/freelance/FASHION NETWORK 3.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Health Care N.G.O',
+    projectCountry: 'NEW ZEALAND',
+    projectDescription: 'National Hauora Coalition',
+    projectTags: ['Magazine Design',],
+    images: [
+      '/portfoimages/freelance/NGO-Mag-1.jpg',
+      '/portfoimages/freelance/NGO-Mag-2.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Day and Night Jewel',
+    projectCountry: 'RUSSIA',
+    projectDescription: 'Safiya Alexandrites Jewellery',
+    projectTags: ['3D Design', 'Banner Design',],
+    images: [
+      '/portfoimages/freelance/safyia.jpg',
+      '/portfoimages/freelance/safyia-Small.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'La Passion De Bien Nourrir',
+    projectCountry: 'CAMEROON',
+    projectDescription: 'Broli Company',
+    projectTags: ['Billboard Design', ],
+    images: [
+      '/portfoimages/freelance/Broli-bilbord-2.jpg',
+      '/portfoimages/freelance/Broli-bilbord-1.jpg',
+      '/portfoimages/freelance/Broli-bilbord-3.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Hook-N-Cook Off',
+    projectCountry: 'USA',
+    projectDescription: 'Vyve Broadband Company',
+    projectTags: ['Poster Design',],
+    images: [
+      '/portfoimages/freelance/Hook-N-Cook-Off.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Pets Toys',
+    projectCountry: 'USA',
+    projectDescription: 'Doggy Mailbox',
+    projectTags: ['Packaging Design', ],
+    images: [
+      '/portfoimages/freelance/DoggyMailbox-1.jpg',
+      '/portfoimages/freelance/DoggyMailbox-2.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Ultimate Heal',
+    projectCountry: 'USA',
+    projectDescription: '',
+    projectTags: ['Label Design',],
+    images: [
+      '/portfoimages/freelance/Bowel-Restore-LBL-2.jpg',
+      '/portfoimages/freelance/Bowel-Restore-LBL-3.jpg',
+      '/portfoimages/freelance/Bowel-Restore-LBL-4.jpg',
+      '/portfoimages/freelance/Bowel-Restore-LBL-1.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Certificate and Diploma',
+    projectCountry: 'USA, SPAIN',
+    projectDescription: 'Wise Athena Company',
+    projectTags: ['Certificate Design', '3D Design',],
+    images: [
+      '/portfoimages/freelance/WISE-ATHENA-ALEN-CERTIFICATE.jpg',
+      '/portfoimages/freelance/WISE-ATHENA-ALEN-CERTIFICATE2.jpg',
+    ],
+  videos: []
+  },
+  { projectTitle: 'Deck Patterns',
+    projectCountry: 'USA',
+    projectDescription: 'Deck Pattern for Kayak',
+    projectTags: ['3D Modeling', 'Texture Design',],
+    images: [
+      '/portfoimages/freelance/deck-pattern-for-kayak.jpg',
+    ],
+  videos: []
+  },
 ];
 
 export default function FreelancePage() {
@@ -125,232 +238,7 @@ export default function FreelancePage() {
         {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
-        {/* Fashion Scarfing */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Fashion Scarfing</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Scarf Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Pattern Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">IRAN, TURKEY, UAE</span>
-            </div>
-            <p>HijabMe Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/HijabMe1.gif" alt="Fashion Scarfing" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/HijabMe2.gif" alt="Fashion Scarfing" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/HijabMe3.gif" alt="Fashion Scarfing" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/HijabMe4.gif" alt="Fashion Scarfing" />
-          </div>
-        </div>
-{/* Runners for Mercedes */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Runners for Mercedes</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Poster Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">CANADA</span>
-            </div>
-            <p>Mercedes Benz Burlington</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Mercedes-Benz.jpg" alt="Runners for Mercedes - Mercedes Benz Burlington" />
-          </div>
-        </div>
-        {/* Data Optimization */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Data Optimization</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Crosslake Tech Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Crosslake.jpg" alt="Data Optimization - Crosslake Tech Company" />
-          </div>
-        </div>
-{/* Fashion Network */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Fashion Network</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Magazine Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">INTERNATONAL</span>
-            </div>
-            <p>FASHION NETWORK</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/FASHION NETWORK 1.jpg" alt="Fashion Network" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/FASHION NETWORK 2.jpg" alt="Fashion Network" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/FASHION NETWORK 3.jpg" alt="Fashion Network" />
-          </div>
-        </div>
-{/* Health Care N.G.O */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Health Care N.G.O</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Magazine Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">NEW ZEALAND</span>
-            </div>
-            <p>National Hauora Coalition</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/NGO-Mag-1.jpg" alt="Health Care N.G.O - National Hauora Coalition" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/NGO-Mag-2.jpg" alt="Health Care N.G.O - National Hauora Coalition" />
-          </div>
-        </div>
-{/* Day and Night Jewel */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Day and Night Jewel</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Banner Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">RUSSIA</span>
-            </div>
-            <p>Safiya Alexandrites Jewellery</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/safyia.jpg" alt="Day and Night Jewel - Safiya Alexandrites Jewellery" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/safyia-Small.jpg" alt="Day and Night Jewel - Safiya Alexandrites Jewellery" />
-          </div>
-        </div>
-        {/* La Passion De Bien Nourrir */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">La Passion De Bien Nourrir</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Billboard Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">CAMEROON</span>
-            </div>
-            <p>Broli Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Broli-bilbord-2.jpg" alt="La Passion De Bien Nourrir - Broli Company" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Broli-bilbord-1.jpg" alt="La Passion De Bien Nourrir - Broli Company" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Broli-bilbord-3.jpg" alt="La Passion De Bien Nourrir - Broli Company" />
-          </div>
-        </div>
-        {/* Hook-N-Cook Off */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Hook-N-Cook Off</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Poster Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Vyve Broadband Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Hook-N-Cook-Off.jpg" alt="Hook-N-Cook Off - Vyve Broadband Company" />
-          </div>
-        </div>
-                {/* Pets Toys */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Pets Toys</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Packaging Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Doggy Mailbox</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/DoggyMailbox-1.jpg" alt="Pets Toys - Doggy Mailbox" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/DoggyMailbox-2.jpg" alt="Pets Toys - Doggy Mailbox" />
-          </div>
-        </div>
-        {/* Ultimate Heal */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Ultimate Heal</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Label Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Packaging Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            {/* <p>Doggy Mailbox</p> */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Bowel-Restore-LBL-2.jpg" alt="Ultimate Heal" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Bowel-Restore-LBL-3.jpg" alt="Ultimate Heal" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Bowel-Restore-LBL-4.jpg" alt="Ultimate Heal" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/Bowel-Restore-LBL-1.jpg" alt="Ultimate Heal" />
-          </div>
-        </div>
-        {/* Certificate and Diploma */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Certificate and Diploma</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Certificate Design</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA, SPAIN</span>
-            </div>
-            <p>Wise Athena Company</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/WISE-ATHENA-ALEN-CERTIFICATE.jpg" alt="Certificate and Diploma - Wise Athena Company" />
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/WISE-ATHENA-ALEN-CERTIFICATE2.jpg" alt="Certificate and Diploma - Wise Athena Company" />
-          </div>
-        </div>
-        {/* Deck Patterns */}
-        <div className="p-4 rounded-xl bg-gradient-to-br from-purple-300 via-slate-200 to-rose-300 ">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="font-semibold text-lg">Deck Patterns</h2>
-                <p className="mt-2">
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">3D Modeling</span>
-                  <span className="rounded-lg bg-zinc-50 px-2 py-1 text-sm mr-1">Texture Design</span>
-                </p>
-              </div>
-              <span className="italic font-normal">USA</span>
-            </div>
-            <p>Deck Pattern for Kayak</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 text-gray-600 space-y-4">
-              <img className="rounded-xl mx-auto" src="/portfoimages/freelance/deck-pattern-for-kayak.jpg" alt="Deck Patterns for Kayak" />
-          </div>
-        </div>
-              {/* Hacking The Curiosity
-                 Blog Redesign
-              USA
-            Curiosity Hack Blogging
-            /portfoimages/freelance/curiosity-hack-logo-2.png
-            curiosity-hack-logo-1.png
-            curiosity-hack-logo-3.png
 
-              Gottes Weg
-              Business Card Design
-              GERMANY
-              Gottes Weg Church
-              Business-Card-Gottes-Weg.jpg */}
-      
-      
       </div>
     </main>
     );

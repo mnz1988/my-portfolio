@@ -118,12 +118,12 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/logo">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Logo & Logo motion
+            Logo & Branding
           </h2>
           <p className="text-center font-semibold text-gray-900">Graphic Design</p>
           <p className="text-center text-gray-700">2006~today / International</p>
-          <video className="rounded-lg border border-gray-300 w-full mt-2" loop autoPlay={true} preload="true">
-            <source src="/portfoimages/logo/logo-animation-demo.mp4" type="video/mp4" />
+          <video className="rounded-lg w-full mt-2" loop autoPlay controls={false}>
+            <source src="/portfoimages/logo/Unstoppable Domains.mp4" type="video/mp4" />
           </video>
           </Link>
         </div>
