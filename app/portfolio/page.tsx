@@ -13,11 +13,11 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <main>
+    <main className="m-0">
       <LoadingOverlayLight />
       
       {/* Video Hero */}
-      <div className="relative w-screen h-[28vh] sm:h-[29vh] md:h-[40vh] lg:h-[48vh]">
+      <div className="relative h-[28vh] sm:h-[29vh] md:h-[40vh] lg:h-[48vh]">
         <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay loop muted controls={false} playsInline>
           <source src="/portfoimages/idea-developer.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -143,13 +143,14 @@ export default function PortfolioPage() {
 
 
         {/* Contact Section */}
-        <section className="col-span-full p-6 rounded-xl bg-white border border-gray-200">
-          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+        {/*   */}
+        <section className="col-span-full p-6 rounded-xl bg-gradient-to-br from-purple-400 via-slate-300 to-rose-400">
+          <h2 className="text-center font-light text-3xl">
             Reach Out:
           </h2>
           <div className="flex justify-center mt-6">
             <Image
-              src="/moji-as-monster.webp"
+              src="/logo.png"
               alt="profile picture"
               width={160}
               height={160}
@@ -166,7 +167,7 @@ export default function PortfolioPage() {
               </Link>
             ))}
           </div>
-          <div className="text-center text-xs pt-5">MNZ.COOL - 2025</div>
+          <div className="text-center text-xs pt-5 text-white">MNZ.COOL - 2025</div>
         </section>
       </div>
     </main>

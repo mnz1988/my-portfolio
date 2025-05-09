@@ -8,6 +8,9 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], wei
 export const metadata: Metadata = {
   title: "Moji Norouzi Portfolio",
   description: "3D Art-Tech Portfolio. Explore my works and learn more about me.",
+  authors: [{ name: "Mojtaba Norouzizadeh", url: "https://mnz.cool" }],
+  robots: { index: true, follow: true },
+  icons: "./icon.png",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
