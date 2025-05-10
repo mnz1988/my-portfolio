@@ -162,7 +162,7 @@ export default function PortfolioPage() {
             {contactLinks.map(({ href, src, alt }) => (
               <Link key={href} href={href} aria-label={alt} target="_blank">
                 <Image src={src} alt={alt} width={36} height={36}
-                  className={`transition-transform hover:-translate-y-2 ${alt === "Telegram" ? "animate-bounce" : ""}`}
+                  className={`opacity-70 transition-transform hover:-translate-y-2 ${alt === "Telegram" ? "animate-bounce" : ""}`}
                 />
               </Link>
             ))}

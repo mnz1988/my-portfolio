@@ -14,7 +14,7 @@ export const ImageLightbox = ({ images, videos }: { images: string[], videos: st
             {src.match(/\.(mp4|webm|mov)$/i) ? (
               <video 
                 className="cursor-pointer rounded-xl mx-auto max-h-full object-cover"
-                autoPlay loop
+                autoPlay loop muted
                 onClick={() => {
                   setCurrentIndex(index);
                   setIsOpen(true);

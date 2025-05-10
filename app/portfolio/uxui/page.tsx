@@ -18,23 +18,19 @@ const projects = [
       '/portfoimages/uxui/alibaba/alibaba-game.mp4',
     ]
   },
-  // {  projectTitle: 'Ali Baba Mobile Game',
-  //   projectCountry: 'International',
-  //   projectDescription: 'Ali Baba & the 40 Thieves WORD Connect',
-  //   projectTags: [],
-  //   images: [
-  //     '/portfoimages/uxui/alibaba/ali-baba_banner-play-2.webp',
-  //     '/portfoimages/uxui/alibaba/image1.webp',
-  //     '/portfoimages/uxui/alibaba/play-screen-test.webp',
-  //     '/portfoimages/uxui/alibaba/splash-1-test.webp',
-  //     '/portfoimages/uxui/alibaba/image2.webp',
-  //     '/portfoimages/uxui/alibaba/splash-2.webp',
-  //     '/portfoimages/uxui/alibaba/view_old-bg-test.webp',
-  //   ],
-  //   videos: [
-  //     '/portfoimages/uxui/alibaba/alibaba-game.mp4',
-  //   ]
-  // },
+  {  projectTitle: 'C-Way World Wide Platform',
+    projectCountry: 'International',
+    projectDescription: 'IDEO Challenge to create a sustainable Bagless system to reduce the waste of shopping processes',
+    projectTags: [],
+    images: [
+      '/portfoimages/uxui/cway-ideo-bagless/c-way.webp',
+      '/portfoimages/uxui/cway-ideo-bagless/c-way_COVER.webp',
+      '/portfoimages/uxui/cway-ideo-bagless/bm.webp',
+      '/portfoimages/uxui/cway-ideo-bagless/c-way_platform_Chart.webp',
+      '/portfoimages/uxui/cway-ideo-bagless/c-way_idea-pre-illustration.webp',
+    ],
+    videos: []
+  },
   {  projectTitle: 'NonStop Web and Calculator',
     projectCountry: 'USA',
     projectDescription: 'NonStop Signs Company, Website retouching',
@@ -138,7 +134,7 @@ export default function FreelancePage() {
 
       {/* Subtitle */}
       <div className="text-center text-xl font-medium mb-8">
-      Mobile Apps / Web Apps
+      Mobile Apps / Web Apps / System Design
       </div>
 
       {/* Content Grid */}
