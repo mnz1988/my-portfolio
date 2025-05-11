@@ -72,7 +72,7 @@ export default function PortfolioPage() {
           <p className="text-center text-gray-700">2014~today / International</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls loop poster="/portfoimages/uxui/gramista/Capture.webp">
-            <source src="/portfoimages/pnx/PNX-Upgrade.mp4" type="video/mp4" />
+            <source src="/portfoimages/uxui/member/membersgram.webm" type="video/mp4" />
           </video>
         </div>
 
@@ -87,6 +87,33 @@ export default function PortfolioPage() {
           <img src="/portfoimages/freelance-cover.webp" className="rounded-lg w-full mt-2" alt="freelancing design" />
           </Link>
         </div>
+
+        {/* Logo / branding */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/logo">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Logo & Branding
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Graphic Design</p>
+          <p className="text-center text-gray-700">2006~today / International</p>
+          <video className="rounded-lg w-full mt-2" loop autoPlay controls={false}>
+            <source src="/portfoimages/logo/Unstoppable Domains.mp4" type="video/mp4" />
+          </video>
+          </Link>
+        </div>
+
+        {/* No-Contact Sanitizer */}
+        <div className="p-4 rounded-xl bg-white border border-gray-200">
+          <Link href="/portfolio/sanitizer">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Contactless Sanitizers
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Product Line Designer</p>
+          <p className="text-center text-gray-700">2019 / IRI</p>
+          <img className="rounded-lg w-full mt-2" src="/portfoimages/sanitizer-cover.webp" />
+          </Link>
+        </div>
+
 
         {/* ardourWolf */}
         <div className="p-4 rounded-xl bg-white border border-gray-200">
@@ -114,36 +141,7 @@ export default function PortfolioPage() {
           </video>
         </div>
 
-        {/* Logo / branding */}
-        <div className="p-4 rounded-xl bg-white border border-gray-200">
-          <Link href="/portfolio/logo">
-          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Logo & Branding
-          </h2>
-          <p className="text-center font-semibold text-gray-900">Graphic Design</p>
-          <p className="text-center text-gray-700">2006~today / International</p>
-          <video className="rounded-lg w-full mt-2" loop autoPlay controls={false}>
-            <source src="/portfoimages/logo/Unstoppable Domains.mp4" type="video/mp4" />
-          </video>
-          </Link>
-        </div>
-
-
-        {/* I.D. Accelerator */}
-        {/* <div className=" p-4 rounded-xl bg-white border border-gray-200">
-          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            I.D. Accelerator 
-          </h2>
-          <p className="text-center font-semibold text-gray-900">Product Designer / Business Consultant</p>
-          <p className="text-center text-gray-700">2018~2020 / IRI</p>
-          <video className="rounded-lg w-full mt-2" controls autoPlay loop poster="/portfoimages/phnx-cover.webp">
-            <source src="/portfoimages/ida/IdeaDevelopersAccelerator.mp4" type="video/mp4" />
-          </video>
-        </div> */}
-
-
         {/* Contact Section */}
-        {/*   */}
         <section className="col-span-full p-6 rounded-xl bg-gradient-to-br from-purple-400 via-slate-300 to-rose-400">
           <h2 className="text-center font-light text-3xl">
             Reach Out:
