@@ -1,6 +1,15 @@
 import ProjectCard from "@/app/components/projectCard";
 
 const projects = [
+  { projectTitle: 'MOONMAN SHOT',
+    projectCountry: 'USA',
+    projectDescription: 'Video Intro for Youtube and Twich Platforms',
+    projectTags: ['Motion Design',],
+    images: [],
+    videos: [
+      '/portfoimages/freelance/moonman-intro.webm',
+    ]
+  },
   { projectTitle: 'Rain in All Languages',
     projectCountry: 'JAPAN',
     projectDescription: 'Design On Blunt xs Metro / Weather application',

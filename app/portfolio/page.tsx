@@ -34,14 +34,27 @@ export default function PortfolioPage() {
 
       {/* Portfolio Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 px-4 grid-rows-auto">
+
+      {/* Relax Me! */}
+      <div className="p-4 rounded-xl bg-white border border-gray-200">
+        <Link href="/portfolio/relaxme">
+          <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
+            Relax Me! <span className="text-sm ">on the Blockchain</span>
+          </h2>
+          <p className="text-center font-semibold text-gray-900">Designing / Programming</p>
+          <p className="text-center text-gray-700">2025~<span className="text-xs">today</span> / International</p>
+          <img className="rounded-lg w-full mt-2" src="/portfoimages/relaxme-cover.webp" />
+        </Link>
+      </div>
+
         {/* Aropix Studio */}
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/aropix">
             <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-              Aropix Studio 🔗
+              Aropix Studio 
             </h2>
             <p className="text-center font-semibold text-gray-900">Producer / Core Team</p>
-            <p className="text-center text-gray-700">2023~today / International</p>
+            <p className="text-center text-gray-700">2023~<span className="text-xs">today</span> / International</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/aropix-cover.webp">
             <source src="/portfoimages/aropix/Wooden Soul by Aropix Studio.mp4" type="video/mp4" />
@@ -52,10 +65,10 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/ff">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Final Frontier 🔗
+            Final Frontier 
           </h2>
           <p className="text-center font-semibold text-gray-900">Web3 Core Team + Designer</p>
-          <p className="text-center text-gray-700">2021~today / USA</p>
+          <p className="text-center text-gray-700">2021~<span className="text-xs">today</span> / USA</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/ff-cover.webp">
             <source src="/portfoimages/ff/FinalFrontier.webm" type="video/webm" />
@@ -66,10 +79,10 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/uxui">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-          UX/UI - Mobile & Web 🔗
+          UX/UI - Mobile & Web 
           </h2>
           <p className="text-center font-semibold text-gray-900">Analyzer and Designer</p>
-          <p className="text-center text-gray-700">2014~today / International</p>
+          <p className="text-center text-gray-700">2014~<span className="text-xs">today</span> / International</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls loop poster="/portfoimages/uxui/gramista/Capture.webp">
             <source src="/portfoimages/uxui/member/membersgram.webm" type="video/mp4" />
@@ -80,10 +93,10 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/freelancing">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Freelancing 🔗
+            Freelancing 
           </h2>
           <p className="text-center font-semibold text-gray-900">Creative Designer</p>
-          <p className="text-center text-gray-700">2006~today / International</p>
+          <p className="text-center text-gray-700">2006~<span className="text-xs">today</span> / International</p>
           <img src="/portfoimages/freelance-cover.webp" className="rounded-lg w-full mt-2" alt="freelancing design" />
           </Link>
         </div>
@@ -95,7 +108,7 @@ export default function PortfolioPage() {
             Logo & Branding
           </h2>
           <p className="text-center font-semibold text-gray-900">Graphic Design</p>
-          <p className="text-center text-gray-700">2006~today / International</p>
+          <p className="text-center text-gray-700">2006~<span className="text-xs">today</span> / International</p>
           <video className="rounded-lg w-full mt-2" loop autoPlay controls={false}>
             <source src="/portfoimages/logo/Unstoppable Domains.mp4" type="video/mp4" />
           </video>
@@ -109,7 +122,7 @@ export default function PortfolioPage() {
             Contactless Sanitizers
           </h2>
           <p className="text-center font-semibold text-gray-900">Product Line Designer</p>
-          <p className="text-center text-gray-700">2019 / IRI</p>
+          <p className="text-center text-gray-700">2019~2020 / IRI</p>
           <img className="rounded-lg w-full mt-2" src="/portfoimages/sanitizer-cover.webp" />
           </Link>
         </div>
@@ -119,10 +132,10 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/ardourWolf">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Ardour Wolf 🔗
+            Ardour Wolf 
           </h2>
           <p className="text-center font-semibold text-gray-900">Product Designer</p>
-          <p className="text-center text-gray-700">2009 / Australia</p>
+          <p className="text-center text-gray-700">2009~1010 / Australia</p>
           <img src="/portfoimages/avesCover.webp" className="w-full" />
           </Link>
         </div>
@@ -131,10 +144,10 @@ export default function PortfolioPage() {
         <div className="p-4 rounded-xl bg-white border border-gray-200">
           <Link href="/portfolio/lottyDotty">
           <h2 className="text-center font-light text-3xl text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-pink-600">
-            Lotty Dotty 🔗
+            Lotty Dotty 
           </h2>
           <p className="text-center font-semibold text-gray-900">Product Designer</p>
-          <p className="text-center text-gray-700">2008 / FRANCE, USA</p>
+          <p className="text-center text-gray-700">2008-2009 / FRANCE, USA</p>
           </Link>
           <video className="rounded-lg w-full mt-2" controls preload="none" poster="/portfoimages/LottyDottycover.webp" loop>
             <source src="/portfoimages/LottyDotty/LDTShirts.mp4" type="video/webm" />

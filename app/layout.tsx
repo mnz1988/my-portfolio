@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "3D Art-Tech Portfolio. Explore my works and learn more about me.",
   authors: [{ name: "Mojtaba Norouzizadeh", url: "https://mnz.cool" }],
   robots: { index: true, follow: true },
-  icons: "./icon.png",
+  icons: "favicon.png",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
