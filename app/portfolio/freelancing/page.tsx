@@ -1,6 +1,16 @@
 import ProjectCard from "@/app/components/projectCard";
 
 const projects = [
+  { projectTitle: 'Cyrus Foundation',
+    projectCountry: 'Japan',
+    projectDescription: 'Event, Workshops, and Website Design @ www.cyrusfoundation.info',
+    projectTags: ['Poster & flyer Design', 'Web Design', ],
+    images: [
+      '/portfoimages/freelance/cyrusfoundation-info poster 1.webp',
+      '/portfoimages/freelance/cyrusfoundation-info poster 2.webp'
+    ],
+    videos: []
+  },
   { projectTitle: 'MOONMAN SHOT',
     projectCountry: 'USA',
     projectDescription: 'Video Intro for Youtube and Twich Platforms',

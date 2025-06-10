@@ -6,14 +6,14 @@ export default function RelaxMePage() {
       <div className="w-full lg:w-4/5 mx-auto">
         <div className="p-8 text-center md:text-left">
           <h1 className="my-1 text-5xl font-bold leading-tight">Relax Me!</h1>
-          <p className="text-2xl">TON Blockchain MiniApp for Self-Massage</p>
+          <p className="text-2xl">Self-Massage MiniApp on TON Blockchain</p>
         </div>
       </div>
 
       {/* Intro Section */}
       <div className="py-6 px-6 max-w-6xl mx-auto text-gray-600">
           <p className="text-2xl text-center text-transparent bg-clip-text bg-gradient-to-br from-pink-600 to-blue-300 dark:from-blue-400 dark:to-pink-400">
-            Ongoing Personal Side Project - Accessible Wellness Through Technology and Gamification
+            Ongoing Personal Side Project - Making Wellness Accessible Through Technology & Gamification
             <br/><span className="text-lg">In my spare time, I have been passionately developing a personal project that brings 
               together my interests in user-centered design, gamification, and emerging platforms like Telegram Mini Apps on 
               blockchain technology. What started as a basic idea to guide users through self-massage routines has evolved into a 
