@@ -18,6 +18,7 @@ export default function RelaxMePage() {
               together my interests in user-centered design, gamification, and emerging platforms like Telegram Mini Apps on 
               blockchain technology. What started as a basic idea to guide users through self-massage routines has evolved into a 
               thoughtful, inclusive, and engaging digital wellness assistant.</span>
+            <br /> you can find it here: <a href="https://t.me/RelaxMeBot" target="_blank" > @RelaxMeBot </a>
           </p>
       </div>
 
